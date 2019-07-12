@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 Message = 'NAANAAANNNAANAAAANANANANAAAAAAAANNAANAAANAAANANNAAAAAAAANNNAANAAAAANAANAAAA'
 encMessage = Message.replace('N', 'B')
 chars = [(encMessage[i:i+5]) for i in range(0, len(encMessage), 5)]
