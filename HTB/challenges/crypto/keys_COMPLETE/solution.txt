@@ -1,0 +1,1 @@
+its a fernet cipher used an online tool to decode the flag
