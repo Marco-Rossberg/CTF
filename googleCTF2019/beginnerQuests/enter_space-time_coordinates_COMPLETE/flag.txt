@@ -1,0 +1,2 @@
+Arrived at the flag. Congrats, your flag is: CTF{welcome_to_googlectf}
+Arrived somewhere, but not where the flag is. Sorry, try again.
