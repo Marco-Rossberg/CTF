@@ -1,0 +1,20 @@
+
+DB password:
+root:Zk6heYCyv6ZE9Xcg
+
+
+User Passwords:
+{"ID":"1","name":"Admin","Role":"Superuser"}
+{"ID":"2","name":"Derry","Role":"Web Admin"}
+{"ID":"3","name":"Yuri","Role":"Beta Tester"}
+{"ID":"4","name":"Dory","Role":"Supporter"}
+
+{"name":"Admin","password":"WX5b7)>/rp$U)FW"}r
+{"name":"Derry","password":"rZ86wwLvx7jUxtch"}
+{"name":"Yuri","password":"bet@tester87"}
+{"name":"Dory","password":"5y:!xa=ybfe)/QD"}r
+
+
+ajenti login creds:
+
+root:KpMasng6S5EtTy9Z
