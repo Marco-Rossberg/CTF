@@ -1,0 +1,17 @@
+
+PDF version 1.6
+Security Handler: Standard
+V: 2
+R: 3
+P: -1060
+Length: 128
+Encrypted Metadata: True
+FileID: 5c8f37d2a45eb64e9dbbf71ca3e86861
+U: 9cba5cfb1c536f1384bba7458aae3f8100000000000000000000000000000000
+O: 702cc7ced92b595274b7918dcb6dc74bedef6ef851b4b4b5b8c88732ba4dac0c
+Average Speed: 61908.8 w/s. Current Word: 'tanely'
+Average Speed: 61058.6 w/s. Current Word: '!xoxjadeangelpreciousxox!'
+Average Speed: 55833.2 w/s. Current Word: 'squarebob2'
+Average Speed: 62446.8 w/s. Current Word: 'paljot'
+Average Speed: 66363.8 w/s. Current Word: 'livelaughlove4b'
+found user-password: 'jumanji69'

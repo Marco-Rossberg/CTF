@@ -1,0 +1,5 @@
+first crack the zip file password with fcrackzip and rockyou.txt pw=justdoit
+it gives us a file that contains the base64 decoded ssh pw
+use an online tool to decode the base64 string it gives us an binary string
+use an online tool to decode the binary string it gives us the plaintext ssh pw
+
