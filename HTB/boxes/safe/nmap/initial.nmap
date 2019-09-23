@@ -1,0 +1,82 @@
+# Nmap 7.70 scan initiated Thu Aug  8 22:01:41 2019 as: nmap -A -p- -oA nmap/initial 10.10.10.147
+Nmap scan report for 10.10.10.147
+Host is up (0.069s latency).
+Not shown: 65532 closed ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.4p1 Debian 10+deb9u6 (protocol 2.0)
+| ssh-hostkey: 
+|_  256 99:7e:1e:22:76:72:da:3c:c9:61:7d:74:d7:80:33:d2 (ECDSA)
+80/tcp   open  http    Apache httpd 2.4.25 ((Debian))
+1337/tcp open  waste?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP: 
+|     16:02:42 up 54 min, 2 users, load average: 1.40, 0.52, 0.30
+|   DNSVersionBindReqTCP: 
+|     16:02:37 up 54 min, 2 users, load average: 1.34, 0.49, 0.29
+|   GenericLines: 
+|     16:02:26 up 53 min, 2 users, load average: 0.64, 0.34, 0.24
+|     What do you want me to echo back?
+|   GetRequest: 
+|     16:02:32 up 54 min, 2 users, load average: 0.59, 0.33, 0.24
+|     What do you want me to echo back? GET / HTTP/1.0
+|   HTTPOptions: 
+|     16:02:32 up 54 min, 2 users, load average: 0.59, 0.33, 0.24
+|     What do you want me to echo back? OPTIONS / HTTP/1.0
+|   Help: 
+|     16:02:47 up 54 min, 2 users, load average: 1.45, 0.54, 0.31
+|     What do you want me to echo back? HELP
+|   Kerberos, SSLSessionReq, TLSSessionReq: 
+|     16:02:47 up 54 min, 2 users, load average: 1.45, 0.54, 0.31
+|     What do you want me to echo back?
+|   NULL: 
+|     16:02:26 up 53 min, 2 users, load average: 0.64, 0.34, 0.24
+|   RPCCheck: 
+|     16:02:32 up 54 min, 2 users, load average: 0.59, 0.33, 0.24
+|   RTSPRequest: 
+|     16:02:32 up 54 min, 2 users, load average: 0.59, 0.33, 0.24
+|_    What do you want me to echo back? OPTIONS / RTSP/1.0
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port1337-TCP:V=7.70%I=7%D=8/8%Time=5D4C7FCC%P=x86_64-pc-linux-gnu%r(NUL
+SF:L,3F,"\x2016:02:26\x20up\x2053\x20min,\x20\x202\x20users,\x20\x20load\x
+SF:20average:\x200\.64,\x200\.34,\x200\.24\n")%r(GenericLines,64,"\x2016:0
+SF:2:26\x20up\x2053\x20min,\x20\x202\x20users,\x20\x20load\x20average:\x20
+SF:0\.64,\x200\.34,\x200\.24\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20e
+SF:cho\x20back\?\x20\r\n")%r(GetRequest,72,"\x2016:02:32\x20up\x2054\x20mi
+SF:n,\x20\x202\x20users,\x20\x20load\x20average:\x200\.59,\x200\.33,\x200\
+SF:.24\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20GET\x
+SF:20/\x20HTTP/1\.0\r\n")%r(HTTPOptions,76,"\x2016:02:32\x20up\x2054\x20mi
+SF:n,\x20\x202\x20users,\x20\x20load\x20average:\x200\.59,\x200\.33,\x200\
+SF:.24\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20OPTIO
+SF:NS\x20/\x20HTTP/1\.0\r\n")%r(RTSPRequest,76,"\x2016:02:32\x20up\x2054\x
+SF:20min,\x20\x202\x20users,\x20\x20load\x20average:\x200\.59,\x200\.33,\x
+SF:200\.24\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20O
+SF:PTIONS\x20/\x20RTSP/1\.0\r\n")%r(RPCCheck,3F,"\x2016:02:32\x20up\x2054\
+SF:x20min,\x20\x202\x20users,\x20\x20load\x20average:\x200\.59,\x200\.33,\
+SF:x200\.24\n")%r(DNSVersionBindReqTCP,3F,"\x2016:02:37\x20up\x2054\x20min
+SF:,\x20\x202\x20users,\x20\x20load\x20average:\x201\.34,\x200\.49,\x200\.
+SF:29\n")%r(DNSStatusRequestTCP,3F,"\x2016:02:42\x20up\x2054\x20min,\x20\x
+SF:202\x20users,\x20\x20load\x20average:\x201\.40,\x200\.52,\x200\.30\n")%
+SF:r(Help,68,"\x2016:02:47\x20up\x2054\x20min,\x20\x202\x20users,\x20\x20l
+SF:oad\x20average:\x201\.45,\x200\.54,\x200\.31\n\nWhat\x20do\x20you\x20wa
+SF:nt\x20me\x20to\x20echo\x20back\?\x20HELP\r\n")%r(SSLSessionReq,65,"\x20
+SF:16:02:47\x20up\x2054\x20min,\x20\x202\x20users,\x20\x20load\x20average:
+SF:\x201\.45,\x200\.54,\x200\.31\n\nWhat\x20do\x20you\x20want\x20me\x20to\
+SF:x20echo\x20back\?\x20\x16\x03\n")%r(TLSSessionReq,65,"\x2016:02:47\x20u
+SF:p\x2054\x20min,\x20\x202\x20users,\x20\x20load\x20average:\x201\.45,\x2
+SF:00\.54,\x200\.31\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20ba
+SF:ck\?\x20\x16\x03\n")%r(Kerberos,63,"\x2016:02:47\x20up\x2054\x20min,\x2
+SF:0\x202\x20users,\x20\x20load\x20average:\x201\.45,\x200\.54,\x200\.31\n
+SF:\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20\n");
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (87%)
+OS CPE: cpe:/h:fortinet:fortigate_100d
+Aggressive OS guesses: Fortinet FortiGate 100D firewall (87%)
+No exact OS matches for host (test conditions non-ideal).
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 3306/tcp)
+HOP RTT    ADDRESS
+1   ... 30
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Aug  8 22:05:38 2019 -- 1 IP address (1 host up) scanned in 237.54 seconds
