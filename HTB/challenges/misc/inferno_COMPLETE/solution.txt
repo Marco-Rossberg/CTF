@@ -1,0 +1,3 @@
+given is a base64 decoded string that converts to a giberisch output
+but this output isnt realy giberisch ist a esoterik language called malbolge
+use an online interpreter to decode it.

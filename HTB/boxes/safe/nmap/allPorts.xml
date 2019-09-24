@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Sep 10 21:48:44 2019 as: nmap -A -p- -oA allPorts 10.10.10.147 -->
+<nmaprun scanner="nmap" args="nmap -A -p- -oA allPorts 10.10.10.147" start="1568144924" startstr="Tue Sep 10 21:48:44 2019" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1568144924" endtime="1568145057"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.147" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="resets" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.4p1 Debian 10+deb9u6" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 6d:7c:81:3d:6a:3d:f9:5f:2e:1f:6a:97:e5:00:ba:de (RSA)&#xa;  256 99:7e:1e:22:76:72:da:3c:c9:61:7d:74:d7:80:33:d2 (ECDSA)&#xa;  256 6a:6b:c3:8e:4b:28:f7:60:85:b1:62:ff:54:bc:d8:d6 (ED25519)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">6d7c813d6a3df95f2e1f6a97e500bade</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQC1lhlptw4YE96mogUlBKcqkeUXEOiCLbQxwjfzb4Zv7ddGBtF3jBi1mitjd+njlQQn9KqVXjPjtoEp17iSyI851O++s5SiSt1bIALdd4DA+n65dGZUvotBah+rTCrPa8yUyQ9NaXO1e2ALHZ+qWJJDBYULqTYrqObF1fErk+uaJ2EInSm4O3E4a1rDJP9M6OFInq9er3dVVXzR7pyIyLLiGOnmwrm+XX9/YZ3i9R+S4yb4OexUzLE6s52ZQMPaznExnAnA7EXFojw1+VT5sncZ4hiqBvaYXFHLRZTytiKYO4Bf/Ntl1+IOOQjyvpSnxVy+Riew/AZXMm3qwl/MrNdX</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">997e1e227672da3cc9617d74d78033d2</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCBjZCYZ/SIu/q2bMhVAICKM1a09kOxqXxGZ/Skm0OnzqhoF3Tj2+F6OfYr7yFoF8/SzWiKAOdmyYafg/mTJVT8=</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">6a6bc38e4b28f76085b162ff54bcd8d6</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAINspYs2G7atyE7B4AbsflH8zPxqXWDZv89V1FD9q5ZtB</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.25" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.25</cpe></service><script id="http-server-header" output="Apache/2.4.25 (Debian)"><elem>Apache/2.4.25 (Debian)</elem>
+</script><script id="http-title" output="Apache2 Debian Default Page: It works"><elem key="title">Apache2 Debian Default Page: It works</elem>
+</script></port>
+<port protocol="tcp" portid="1337"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="waste" servicefp="SF-Port1337-TCP:V=7.80%I=7%D=9/10%Time=5D77FE46%P=x86_64-pc-linux-gnu%r(NULL,3E,&quot;\x2017:48:56\x20up\x20\x203:27,\x20\x200\x20users,\x20\x20load\x20average:\x200\.20,\x200\.19,\x200\.14\n&quot;)%r(GenericLines,63,&quot;\x2017:48:56\x20up\x20\x203:27,\x20\x200\x20users,\x20\x20load\x20average:\x200\.20,\x200\.19,\x200\.14\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20\r\n&quot;)%r(GetRequest,71,&quot;\x2017:49:02\x20up\x20\x203:27,\x20\x200\x20users,\x20\x20load\x20average:\x200\.18,\x200\.19,\x200\.14\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20GET\x20/\x20HTTP/1\.0\r\n&quot;)%r(HTTPOptions,75,&quot;\x2017:49:02\x20up\x20\x203:27,\x20\x200\x20users,\x20\x20load\x20average:\x200\.18,\x200\.19,\x200\.14\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20OPTIONS\x20/\x20HTTP/1\.0\r\n&quot;)%r(RTSPRequest,75,&quot;\x2017:49:02\x20up\x20\x203:27,\x20\x200\x20users,\x20\x20load\x20average:\x200\.18,\x200\.19,\x200\.14\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20OPTIONS\x20/\x20RTSP/1\.0\r\n&quot;)%r(RPCCheck,3E,&quot;\x2017:49:02\x20up\x20\x203:27,\x20\x200\x20users,\x20\x20load\x20average:\x200\.18,\x200\.19,\x200\.14\n&quot;)%r(DNSVersionBindReqTCP,3E,&quot;\x2017:49:07\x20up\x20\x203:27,\x20\x200\x20users,\x20\x20load\x20average:\x200\.17,\x200\.18,\x200\.14\n&quot;)%r(DNSStatusRequestTCP,3E,&quot;\x2017:49:12\x20up\x20\x203:27,\x20\x200\x20users,\x20\x20load\x20average:\x200\.16,\x200\.18,\x200\.14\n&quot;)%r(Help,67,&quot;\x2017:49:17\x20up\x20\x203:27,\x20\x200\x20users,\x20\x20load\x20average:\x200\.22,\x200\.19,\x200\.14\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20HELP\r\n&quot;)%r(SSLSessionReq,64,&quot;\x2017:49:17\x20up\x20\x203:27,\x20\x200\x20users,\x20\x20load\x20average:\x200\.20,\x200\.19,\x200\.14\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20\x16\x03\n&quot;)%r(TerminalServerCookie,63,&quot;\x2017:49:17\x20up\x20\x203:27,\x20\x200\x20users,\x20\x20load\x20average:\x200\.20,\x200\.19,\x200\.14\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20\x03\n&quot;)%r(TLSSessionReq,64,&quot;\x2017:49:17\x20up\x20\x203:27,\x20\x200\x20users,\x20\x20load\x20average:\x200\.20,\x200\.19,\x200\.14\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20\x16\x03\n&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP: &#xa;    17:49:12 up 3:27, 0 users, load average: 0.16, 0.18, 0.14&#xa;  DNSVersionBindReqTCP: &#xa;    17:49:07 up 3:27, 0 users, load average: 0.17, 0.18, 0.14&#xa;  GenericLines: &#xa;    17:48:56 up 3:27, 0 users, load average: 0.20, 0.19, 0.14&#xa;    What do you want me to echo back?&#xa;  GetRequest: &#xa;    17:49:02 up 3:27, 0 users, load average: 0.18, 0.19, 0.14&#xa;    What do you want me to echo back? GET / HTTP/1.0&#xa;  HTTPOptions: &#xa;    17:49:02 up 3:27, 0 users, load average: 0.18, 0.19, 0.14&#xa;    What do you want me to echo back? OPTIONS / HTTP/1.0&#xa;  Help: &#xa;    17:49:17 up 3:27, 0 users, load average: 0.22, 0.19, 0.14&#xa;    What do you want me to echo back? HELP&#xa;  NULL: &#xa;    17:48:56 up 3:27, 0 users, load average: 0.20, 0.19, 0.14&#xa;  RPCCheck: &#xa;    17:49:02 up 3:27, 0 users, load average: 0.18, 0.19, 0.14&#xa;  RTSPRequest: &#xa;    17:49:02 up 3:27, 0 users, load average: 0.18, 0.19, 0.14&#xa;    What do you want me to echo back? OPTIONS / RTSP/1.0&#xa;  SSLSessionReq, TLSSessionReq, TerminalServerCookie: &#xa;    17:49:17 up 3:27, 0 users, load average: 0.20, 0.19, 0.14&#xa;    What do you want me to echo back?"><elem key="DNSStatusRequestTCP">&#xa;    17:49:12 up 3:27, 0 users, load average: 0.16, 0.18, 0.14</elem>
+<elem key="DNSVersionBindReqTCP">&#xa;    17:49:07 up 3:27, 0 users, load average: 0.17, 0.18, 0.14</elem>
+<elem key="GenericLines">&#xa;    17:48:56 up 3:27, 0 users, load average: 0.20, 0.19, 0.14&#xa;    What do you want me to echo back?</elem>
+<elem key="GetRequest">&#xa;    17:49:02 up 3:27, 0 users, load average: 0.18, 0.19, 0.14&#xa;    What do you want me to echo back? GET / HTTP/1.0</elem>
+<elem key="HTTPOptions">&#xa;    17:49:02 up 3:27, 0 users, load average: 0.18, 0.19, 0.14&#xa;    What do you want me to echo back? OPTIONS / HTTP/1.0</elem>
+<elem key="Help">&#xa;    17:49:17 up 3:27, 0 users, load average: 0.22, 0.19, 0.14&#xa;    What do you want me to echo back? HELP</elem>
+<elem key="NULL">&#xa;    17:48:56 up 3:27, 0 users, load average: 0.20, 0.19, 0.14</elem>
+<elem key="RPCCheck">&#xa;    17:49:02 up 3:27, 0 users, load average: 0.18, 0.19, 0.14</elem>
+<elem key="RTSPRequest">&#xa;    17:49:02 up 3:27, 0 users, load average: 0.18, 0.19, 0.14&#xa;    What do you want me to echo back? OPTIONS / RTSP/1.0</elem>
+<elem key="SSLSessionReq, TLSSessionReq, TerminalServerCookie">&#xa;    17:49:17 up 3:27, 0 users, load average: 0.20, 0.19, 0.14&#xa;    What do you want me to echo back?</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="43071"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="95" line="65105">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.1" accuracy="95" line="62708">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2" accuracy="95" line="64455">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.2</cpe></osclass>
+</osmatch>
+<osmatch name="AXIS 210A or 211 Network Camera (Linux 2.6.17)" accuracy="94" line="61606">
+<osclass type="webcam" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.17</cpe></osclass>
+<osclass type="webcam" vendor="AXIS" osfamily="embedded" accuracy="94"><cpe>cpe:/h:axis:210a_network_camera</cpe><cpe>cpe:/h:axis:211_network_camera</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.12" accuracy="94" line="63436">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3.12</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13" accuracy="94" line="63553">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="94" line="63944">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.8 - 3.11" accuracy="94" line="66079">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.8" accuracy="94" line="67659">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:4.8</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="94" line="67510">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="12650" lastboot="Tue Sep 10 18:20:07 2019"/>
+<distance value="2"/>
+<tcpsequence index="259" difficulty="Good luck!" values="F9E203E6,B30A43FD,30A318A7,369BCFFC,58CC655D,A3CE29B4"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="2EB274,2EB299,2EB2BA,2EB2F7,2EB30E,2EB32E"/>
+<trace port="8080" proto="tcp">
+<hop ttl="1" ipaddr="10.10.12.1" rtt="28.67"/>
+<hop ttl="2" ipaddr="10.10.10.147" rtt="29.51"/>
+</trace>
+<times srtt="28624" rttvar="3790" to="100000"/>
+</host>
+<runstats><finished time="1568145057" timestr="Tue Sep 10 21:50:57 2019" elapsed="133.89" summary="Nmap done at Tue Sep 10 21:50:57 2019; 1 IP address (1 host up) scanned in 133.89 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,4 @@
+firs get a shell as www-data over sqlmap cmd injection
+then priv esc to user pepper with help of /var/www/admin-Utilities/simpler.py -p and enter $(/bin/bash) as cmd
+then priv esc to root with help of systemd. create a system service that send you a root shell.
+
